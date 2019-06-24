@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Styles.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link rel="stylesheet" href="Social_buttons.css" >
+<script src = "registration.js"></script> 
+<TITLE> Hostel Accomodation Form </TITLE>
+</HEAD>
+<BODY >
+<div class="topnav">  
+<a href="http://www.ssn.edu.in/">SSNCE HOSTEL MANAGEMENT SYSTEM</a>
+</div>
+<FORM action="Register.php" method ="post" onsubmit="return confirm('Do you want to register?')">
+<H2 STYLE = "PADDING:16PX 50PX" align = "center"><strong><font face="Arial">Application For Hostel Accomodation</font></strong></H2>
+<HR>
+<TABLE BORDER = 0 ALIGN = 'CENTER' STYLE = "WIDTH:50%" >
+<TR> 
+<TD STYLE = "PADDING:10PX"> REGISTRATION No.<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"> <INPUT TYPE = "TEXT" minlength="8" maxlength="8" placeholder="Enter Your Registration Number" name="regno" required> </TD>
+</TR>
+<BR>
+<TR>
+<TD STYLE = "PADDING:10PX"> NAME<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"> <INPUT TYPE = "TEXT" placeholder="Enter Your Name" name="name" id="name" onkeyup="namevalidate()" required> </TD>
+<TD STYLE = "PADDING:10PX"><span id='message2'></span></td>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">GENDER<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"><label><INPUT TYPE = "RADIO" NAME = "gender" value = "Male"> Male</label><BR><BR>
+<label><INPUT TYPE = "RADIO" NAME = "gender" value = "Female"> Female</label></TD>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">DATE OF BIRTH<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"> <input type="date" class = "date" name="bday"> </TD>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">BRANCH<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"><SELECT NAME="branch" class="tarea" >
+<OPTION>Select Branch</OPTION>
+<OPTION>Information Technology</OPTION>
+<OPTION>Electrical and Electronics</OPTION>
+<OPTION>Electronics and Communication</OPTION>
+<OPTION>Computer Science</OPTION>
+<OPTION>Civil</OPTION>
+<OPTION>Bio-Medical</OPTION>
+<OPTION>Chemical</OPTION>
+<OPTION>Mechanical</OPTION>
+<OPTION>Other</OPTION>
+</SELECT></TD>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">EMAIL<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"> <INPUT type="email" id= "email" placeholder="name@example.com"  name = "email" onkeyup="emailvalidate()" required> </TD>
+<TD STYLE = "PADDING:10PX"><span id='message1'></span></td>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">PASSWORD<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX">
+ <INPUT TYPE = "PASSWORD" placeholder="Create a Password" name="password" id="password" onkeyup="checkpass()" required>
+</TD>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">RE-ENTER PASSWORD<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"> <INPUT TYPE = "PASSWORD" placeholder="Re-Enter Password" name="rpassword" id="confirm_password" onkeyup="checkpass()" required></TD>
+<TD STYLE = "PADDING:10PX"><span id='message'></span></td>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">HOBBIES :</TD>
+<TD STYLE = "PADDING:10PX">
+<label><INPUT TYPE = "CHECKBOX" name = "hobby[]" value = "Drawing"> Drawing</label><BR><BR>
+<label><INPUT TYPE = "CHECKBOX" name = "hobby[]" value = "Sports"> Sports</label><BR><BR>
+<label><INPUT TYPE = "CHECKBOX" name = "hobby[]" value = "Dance"> Dance</label><BR><BR>
+<label><INPUT TYPE = "CHECKBOX" name = "hobby[]" value = "Reading"> Reading</label></TD>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">CONTACT NO.<font color = "red">*</font> :</TD>
+<TD STYLE = "PADDING:10PX"> <INPUT TYPE = "tel" minlength="10" maxlength="10" id="phone" placeholder="Enter 10 Digit Mobile Number" name = "contact" onkeyup="phonevalidate()" required> </TD>
+<TD STYLE = "PADDING:10PX"><span id='message3'></span></td>
+</TR>
+<TR>
+<TD STYLE = "PADDING:10PX">PERMANENT ADDRESS<font color = "red">*</font> :</TD>
+<div class="input">
+<TD STYLE = "PADDING:10PX"><TEXTAREA NAME= "address" ROWS = "5" COLS = "40" class = "tarea" placeholder="Enter Complete Permanent Address" required></TEXTAREA></TD></div>
+</TR>
+<TR>
+<TD></TD>
+<TD><button class="button4" type= "submit" name = "submitform" value = "submit">SUBMIT</button></TD>
+</TR>
+</TABLE>
+<br>
+<p align = "center" class="container" style="background-color:#f1f1f1">
+<b><font face = "Times New Roman" >FOR MORE DETAILS    &copy; Mayank Singh</font></b><BR><BR>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/MayankS76682259" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/learning/login" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-whatsapp"></a>
+</p>
+</FORM>
+</BODY>
+</HTML>
